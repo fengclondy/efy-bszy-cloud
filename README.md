@@ -29,10 +29,7 @@
 * svca-service - 业务服务A
 * svcb-service - 业务服务B
 
-## 体系架构
-![architecture](/screenshots/architecture.jpg)
-## 应用组件
-![components](/screenshots/components.jpg)
+
 
 # 启动项目
 
