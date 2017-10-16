@@ -1,5 +1,5 @@
 server:
-  port: 88060
+  port: 9080
   
 msg: Hello
 
