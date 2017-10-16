@@ -1,0 +1,35 @@
+version: '2'
+services:
+  rabbitmq:
+      image: rabbitmq:3-management
+      restart: always
+      ports:
+        - 15673:15672
+  registry:
+    image: efy-bszy-cloud/registry
+    ports:
+      - "8761:8761"
+  config:
+    image: efy-bszy-cloud/config
+    ports:
+      - "8888:8888"
+  monitor:
+    image: efy-bszy-cloud/monitor
+    ports:
+      - "8040:8040"
+  zipkin:
+    image: efy-bszy-cloud/zipkin
+    ports:
+      - "9411:9411"
+  gateway:
+    image: efy-bszy-cloud/gateway
+    ports:
+      - "8060:8060"
+  auth-service:
+    image: efy-bszy-cloud/auth-service
+    ports:
+      - "5000:5000"
+  svca-service:
+    image: efy-bszy-cloud/svca-service
+  svcb-service:
+    image: efy-bszy-cloud/svcb-service
