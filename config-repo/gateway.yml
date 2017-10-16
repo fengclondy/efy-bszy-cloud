@@ -30,3 +30,6 @@ zuul:
     svcb-service:
       path: /svcb/**
       sensitiveHeaders:
+    user-service:
+      path: /user/**
+      sensitiveHeaders:
